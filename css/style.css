@@ -1,0 +1,107 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("../img/bg-pattern-top.svg") left top no-repeat, url("../img/bg-pattern-bottom.svg") right bottom no-repeat, hsl(185deg, 75%, 39%) no-repeat;
+  font-size: 1.6rem;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 420px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+.card h1 {
+  font-weight: 700;
+  color: hsl(229deg, 23%, 23%);
+}
+.card h2 {
+  color: hsl(229deg, 23%, 23%);
+}
+.card p {
+  font-weight: 400;
+  color: hsl(0deg, 0%, 59%);
+}
+.card hr {
+  border: 1px solid hsl(0deg, 0%, 59%);
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.card .bubble-img {
+  background-image: url("../img/bg-pattern-card.svg");
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.card .avatar-img {
+  position: absolute;
+  top: 100px;
+  background-image: url("../img/image-victor.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+.card .about-info {
+  display: flex;
+  flex-flow: row wrap;
+  width: 250px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+}
+.card .about-info span {
+  margin-left: 10px;
+  color: hsl(0deg, 0%, 59%);
+  font-weight: 400;
+}
+.card .about-info p {
+  margin-top: 10px;
+}
+.card .social-media-info {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 40px;
+}
+.card .social-media-info p {
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+}
+
+@media (max-width: 375px) {
+  .card {
+    width: 300px;
+    height: 420px;
+  }
+}/*# sourceMappingURL=style.css.map */
